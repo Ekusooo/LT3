@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-image: url('luh2.jpg');
+}
+body {
+    background-image: url('luh.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+div {
+    min-height: 10vh;
+    backdrop-filter: blur(20px);
+}
+section {
+    min-height: 80vh;
+    background-color: rgb(36, 76, 67);
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto auto;
+    box-shadow: 0 0 0px 0px rgb(36, 76, 67);
+    border: 3px solid rgb(26, 53, 47);
+}
+section h1 {
+    font-size: 45px;
+    color: rgb(183, 218, 255);
+}
+p {
+    margin: 1rem;
+    font-size: 30px;
+    color: rgb(155, 173, 192);
+}
+section img {
+    border-radius: 400px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    margin: 4rem;
+}
+section img:hover {
+    scale: 1.2;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.5), 20px 20px rgb(68, 133, 120) ,-20px -0px rgb(34, 68, 61);
+}
